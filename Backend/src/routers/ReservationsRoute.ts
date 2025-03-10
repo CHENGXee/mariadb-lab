@@ -16,6 +16,10 @@ export class ReservationsRoute extends Route{
         this.router.get(`${this.url}test`,(req, res)=>{
             this.Contorller.test(req, res);
         })
+
+        this.router.get(`${this.url}list`, (req, res) => {
+            this.Contorller.list(req, res);
+        })
     }
 
 }
